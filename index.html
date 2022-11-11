@@ -126,8 +126,7 @@
               <p class="heading-label">Дизайнерські рішення</p>
             </div>
           </li>
-      </div>
-      </ul>
+        </ul>
       </div>
     </section>
     <section class="section team-body">
@@ -393,19 +392,76 @@
             </li>
           </ul>
         </div>
+        <div class="mailing">
+          <p class="mailing-insert">Підпишіться на розсилку</p>
+          <form class="mailing-form" autocomplete="on" action="#" method="post">
+            <label for="input-email"></label>
+            <input id="input-email" class="mailing-input" type="email" name="input-email" aria-describedby="input-email"
+              placeholder="E-mail" required>
+            <button class="mailing-button" type="submit" aria-label="Підписатися">
+              Підписатися
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </footer>
   <!--MODAL WINDOW-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <h2>Lorem </h2>
-      <p>Lorem ipsum </p>
       <button class="modal-close-button" type="button" data-modal-close>
         <svg width="11px" height="11px">
           <use href="./images/icons.svg#icon-cross"></use>
         </svg>
       </button>
+      <h2 class="modal-heading">Залиште свої дані, ми вам передзвонимо</h2>
+      <form action="contact-form">
+        <label class="form-label" for="person-name">Ім'я</label>
+        <div class="form-box">
+          <input id="person-name" class="form-input" type="text" name="person-name" placeholder=" " autocomplete="on"
+            required>
+          <svg class="form-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+
+        <label class="form-label" for="person-phone">Телефон</label>
+        <div class="form-box">
+          <input id="person-phone" class="form-input" type="tel" name="person-phone" placeholder=" " autocomplete="on"
+            required>
+          <svg class="form-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <label class="form-label" for="person-email">Пошта</label>
+        <div class="form-box">
+          <input id="person-email" class="form-input" type="email" name="person-email" placeholder=" " autocomplete="on"
+            required>
+          <svg class="form-icon" width="12px" height="12px">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+
+        <label class="form-label" for="person-comment">Коментар</label>
+        <textarea id="person-comment" class="form-textarea" name="person-comment"
+          placeholder="Введіть текст"></textarea>
+        <div class="modal-checkbox">
+          <label class="checkbox-label" for="agreement-checkbox">
+            <input class="checkbox-input visually-hidden" id="agreement-checkbox" type="checkbox"
+              name="agreement-checkbox">
+            <svg class="checkbox-icon" width="11px" height="8px">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю <a class="checkbox-terms" href="#"> Умови
+              договору</a>
+          </label>
+        </div>
+        <button class="modal-button-send" type="submit">Відправити</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
